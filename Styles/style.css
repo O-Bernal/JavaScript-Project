@@ -1,0 +1,209 @@
+html {
+    overflow: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* temp */
+/* #draftBG img {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+} */
+/* main page container */
+#posWrap {
+    position: fixed;
+    width: 100vw;
+    max-height: 100vh;
+    min-height: 100%;
+    /* border: 10px solid blue; */
+}
+/* POS top Nav */
+#menuButton:hover {
+    background-color: #c1a583;
+    border-radius: 4px;
+}
+.menuIcon {
+    width: 30px;
+    height: 4px;
+    background-color: rgb(44, 34, 34);
+    margin: 5px;
+}
+#topNav {
+    position: relative;
+    /* border: 6px solid red; */
+    background-color: #A68358;
+    color: rgb(44, 34, 34);
+    max-width: 100%;
+    height: 14%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-content: center;
+    column-gap: 40%;
+    border-bottom: 1px solid #260101;
+}
+#navTitle {
+    font-size: 2rem;
+    font-weight: bold;
+}
+#searchButton:hover {
+    background-color: #c1a583;
+    border-radius: 4px;
+}
+
+/* POS Containers */
+#posContainer {
+    position: relative;
+    /* border: 6px solid rgb(129, 1, 1); */
+    background-color: #F2F2F2;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 27% 73%;
+}
+    /* POS Order Containers */
+    #orderSummary {
+        /* border: 5px solid green; */
+        min-height: 100%;
+    }
+    #orderTopDiv {
+        /* border: 3px solid rgb(83, 212, 255); */
+        background-color: #395919;
+        color: #F2F2F2;
+        height: 10%;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+        padding-top: 15px;
+        border-bottom: 3px solid #0f410d;
+    }
+    #orderItemContainer {
+        /* border: 3px solid blue; */
+        max-height: 300px;
+        min-height: 55%;
+        overflow: auto;
+    }
+    .item {
+        border-radius: 5px;
+        background-color: #A68358;
+        color: #F2F2F2;
+        padding-top: 15px;
+        padding-left: 15px;
+        height: 60px;
+        margin: 10px;
+        margin-right: 18px;
+        font-weight: bold;
+        /* border: 2px solid black; */
+        box-shadow: 3px 4px 3px #260101af;
+    }
+    #orderCostContainer {
+        /* border: 3px solid rgb(83, 212, 255); */
+        background-color: #648C0D;
+        border-radius: 4px;
+        min-height: 20%;
+        margin: 3px;
+        margin-top: 1px;
+        margin-right: 8px;
+        margin-bottom: 0px;
+    }
+    .orderCostField {
+        height: 34px;
+        margin-bottom: 5px;
+        padding: 4px;
+        font-weight: bold;
+        /* border: 2px solid black; */
+        border-bottom: 1px solid #0f410d;
+        color: #F2F2F2;
+    }
+    #payButton {
+        /* border: 3px solid rgb(83, 212, 255); */
+        background-color: #0f410d;
+        color: #87c96f;
+        height: 10%;
+        text-align: center;
+        padding-top: 14px;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    /* POS Menu Item Containers */
+    #menuTopNav {
+        /* border: 3px solid purple; */
+        background-color: #411607;
+        color: #F2F2F2;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        height: 7%;
+        align-items: center;
+        justify-content: left;
+        column-gap: 17%;
+        font: 2rem bold sans-serif;
+        padding-left: 30px;
+    }
+    .menuButton:hover {
+        background-color: #6a2d1f;
+        border-radius: 4px;
+    }
+    #menuItemSelectionContainer {
+        /* border: 3px solid rgb(216, 60, 216); */
+        border-left: 2px solid #260101;
+        background-color: #e6e1c2;
+        position: relative;
+        height: 93%;
+    }
+    #menuItemSelectionWrap {
+        /* border: 2px solid white; */
+        height: 100%;
+        overflow: auto;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        padding: 10px;
+        gap: 9%;
+        align-items: center;
+        justify-content: center;
+    }
+    .menuItemDrinks {
+        /* border-top: 2px solid #87c96f;
+        border-left: 2px solid #87c96f; */
+        box-shadow: 3px 4px 3px #01201cc1;
+        border-radius: 4px;
+        background-color: #1c7560;
+        color: #a9e7d8;
+        font-weight: bold;
+        width: 150px;
+        height: 150px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-top: 40%;
+    }
+    .menuItemFood {
+        /* border-top: 2px solid #87c96f;
+        border-left: 2px solid #87c96f; */
+        box-shadow: 3px 4px 3px #260101af;
+        border-radius: 4px;
+        background-color: #A68358;
+        color: #F2F2F2;
+        font-weight: bold;
+        width: 150px;
+        height: 150px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-top: 40%;
+    }
+    .menuItemExtras {
+        /* border-top: 2px solid #87c96f;
+        border-left: 2px solid #87c96f; */
+        box-shadow: 3px 4px 3px #01210dd1;
+        border-radius: 4px;
+        background-color: #32832f;
+        color: #cde7cf;
+        font-weight: bold;
+        width: 150px;
+        height: 150px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-top: 40%;
+    }
+
+
