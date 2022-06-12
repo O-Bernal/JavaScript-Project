@@ -95,6 +95,25 @@ html {
         /* border: 2px solid black; */
         box-shadow: 3px 4px 3px #260101af;
     }
+    .removeItem {
+        float: right;
+        margin-right: 5px;
+        width: 30px;
+        text-align: center;
+    }
+    .removeItem:hover {
+        background-color: #6a2d1f;
+        width: 30px;
+        text-align: center;
+        border-radius: 10px;
+    }
+    .removeItem:active {
+        width: 30px;
+        text-align: center;
+        border-radius: 10px;
+        background-color: #c1a583;
+        color: #6a2d1f;
+    }
     #orderCostContainer {
         /* border: 3px solid rgb(83, 212, 255); */
         background-color: #648C0D;
@@ -114,6 +133,15 @@ html {
         border-bottom: 1px solid #0f410d;
         color: #F2F2F2;
     }
+    .costField {
+        float: right;
+        width: 50px;
+        margin-right: 10px;
+        color: #0f410d;
+        background-color: #F2F2F2;
+        border-radius: 4px;
+        /* border: 1px solid black; */
+    }
     #payButton {
         /* border: 3px solid rgb(83, 212, 255); */
         background-color: #0f410d;
@@ -123,6 +151,15 @@ html {
         padding-top: 14px;
         font-size: 2rem;
         font-weight: bold;
+        transition: 0.1s;
+    }
+    #payButton:hover {
+        background-color: #165819;
+        color: #add69e
+    }
+    #payButton:active {
+        background-color: #add69e;
+        color:#165819;
     }
     /* POS Menu Item Containers */
     #menuTopNav {
@@ -204,6 +241,16 @@ html {
         justify-content: center;
         text-align: center;
         padding-top: 40%;
+    }
+    .menuItemDrinks:hover, .menuItemFood:hover, .menuItemExtras:hover {
+        border: 5px solid rgba(0, 0, 0, 0.500);
+        transition: 0.05s;
+    }
+    .menuItemDrinks:active, .menuItemFood:active, .menuItemExtras:active {
+        box-shadow: none;
+        background-color: #a9e7d8;
+        color: #0f410d;
+        border: 2px solid rgba(0, 0, 0, 0.500);
     }
 
 
